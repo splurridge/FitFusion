@@ -1,4 +1,5 @@
 import Logo from "../assets/fitfusion.png";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -19,37 +20,45 @@ function Navbar() {
         >
           <ul className="flex flex-row md:space-x-8 rtl:space-x-reverse">
             <li>
+              <Link to="./banner">
               <a
                 href="#"
-                className="block py-2 px-3 text-white rounded md:bg-transparent md:text-purple-600 md:p-0 md:dark:text-purple-600"
+                className="block py-2 px-3 text-white rounded md:bg-transparent md:text-purple-600 md:p-0 md:dark:text-purple-600 hover:bg-purple-600 hover:text-white"
                 aria-current="page"
               >
                 Home
               </a>
+              </Link>
             </li>
             <li>
+              <Link to="./about">
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-600 md:p-0 dark:text-white md:dark:hover:text-purple-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-white rounded md:bg-transparent md:text-purple-600 md:p-0 md:dark:text-purple-600 hover:bg-purple-600 hover:text-white"
               >
                 About
               </a>
+              </Link>
             </li>
             <li>
+              <Link to="./trainer">
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-600 md:p-0 dark:text-white md:dark:hover:text-purple-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-white rounded md:bg-transparent md:text-purple-600 md:p-0 md:dark:text-purple-600 hover:bg-purple-600 hover:text-white"
               >
                 Trainors
               </a>
+              </Link>
             </li>
             <li>
+              <Link to="./contact">
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-600 md:p-0 dark:text-white md:dark:hover:text-purple-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-white rounded md:bg-transparent md:text-purple-600 md:p-0 md:dark:text-purple-600 hover:bg-purple-600 hover:text-white"
               >
                 Contact
               </a>
+              </Link>
             </li>
           </ul>
         </div>
