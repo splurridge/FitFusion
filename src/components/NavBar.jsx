@@ -1,56 +1,69 @@
 import Logo from "../assets/fitfusion.png";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="bg-gray-800 border-gray-200 dark:bg-gray-1000 fixed top-0 w-full z-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a
-          href="https://flowbite.com/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-        >
+        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={Logo} className="h-8" alt="Fit Fusion Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
             Fit Fusion
           </span>
-        </a>
+        </Link>
         <div
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-user"
         >
           <ul className="flex flex-row md:space-x-8 rtl:space-x-reverse">
             <li>
-              <a
+              <Link to="/"
                 href="#"
-                className="block py-2 px-3 text-white rounded md:bg-transparent md:text-purple-600 md:p-0 md:dark:text-purple-600"
+                className="block py- px-3 text-white rounded bg-transparent md:text-purple-600 md:p-2 md:dark:text-purple-600 hover:bg-purple-600 hover:text-white"
                 aria-current="page"
               >
                 Home
-              </a>
+              </Link>
             </li>
+
             <li>
-              <a
+              <Link to="/about"
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-600 md:p-0 dark:text-white md:dark:hover:text-purple-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-white rounded bg-transparent md:text-purple-600 md:p-2 md:dark:text-purple-600 hover:bg-purple-600 hover:text-white"
               >
                 About
-              </a>
+              </Link>
             </li>
+
             <li>
-              <a
+              <Link to="/contact"
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-600 md:p-0 dark:text-white md:dark:hover:text-purple-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                Trainors
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-600 md:p-0 dark:text-white md:dark:hover:text-purple-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-white rounded bg-transparent md:text-purple-600 md:p-2 md:dark:text-purple-600 hover:bg-purple-600 hover:text-white"
               >
                 Contact
-              </a>
+              </Link>
             </li>
+
+            <div className="flex space-x-4">
+              <li>
+                <Link
+                  to="/login"
+                  className="block px-5 py-2 font-bold text-gray-700 bg-white rounded-full hover:bg-gray-200 transition duration-300"
+                >
+                  Log in
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/signup"
+                  className="block px-5 py-2 font-bold text-gray-700 bg-white rounded-full hover:bg-gray-200 transition duration-300"
+                >
+                  Get Started
+                </Link>
+              </li>
+            </div>
+
           </ul>
         </div>
       </div>
