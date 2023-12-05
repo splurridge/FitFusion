@@ -71,7 +71,7 @@ function Sidebar() {
 
           <div className="px-4 py-3 border-t border-gray-200 dark:border-gray-800">
             {/* Logout section */}
-            <Link to="/logout"
+            <Link to="/login"
               href="#"
               className="flex items-center text-gray-800 dark:text-white"
             >
